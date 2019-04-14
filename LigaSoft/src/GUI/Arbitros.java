@@ -17,6 +17,7 @@ public class Arbitros extends javax.swing.JFrame implements Personas {
     private String NombreCompleto;
     private int Edad;
     private String Sexo;
+    private String Posicion;
     
     
     
@@ -38,16 +39,17 @@ public class Arbitros extends javax.swing.JFrame implements Personas {
     private void initComponents() {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 1224, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 668, Short.MAX_VALUE)
         );
 
         pack();
@@ -103,6 +105,9 @@ public class Arbitros extends javax.swing.JFrame implements Personas {
         this.Sexo = sexo;
     }
 
+    public void setPosicion(String posicion) {
+        this.Posicion = posicion;
+    }
     
     public String getNombreCompleto() {
         return NombreCompleto;
@@ -116,6 +121,10 @@ public class Arbitros extends javax.swing.JFrame implements Personas {
     
     public String getSexo() {
         return Sexo;
+    }
+    
+    public String getPosicion() {
+        return Posicion;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -7,7 +7,7 @@ package Logica;
 
 /**
  *
- * @author Santiago
+ * @author Angel Santiago Trochez
  */
 public interface Personas {
      public abstract void setNombreCompleto(String nombreCompleto);
